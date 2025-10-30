@@ -1,0 +1,3 @@
+IP DE LA VM - Garcia gil
+inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic enp0s3
+inet 192.168.1.35/24 brd 192.168.1.255 scope global dynamic enp0s8
