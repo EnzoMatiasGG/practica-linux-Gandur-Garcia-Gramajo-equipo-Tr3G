@@ -1,0 +1,61 @@
+========== Verificacion servidor lamp - Garcia, Gandur, Gramajo ==========
+=== Versiones instaladas ===
+Server version: Apache/2.4.52 (Ubuntu)
+Server built:   2025-08-11T12:10:10
+mysql  Ver 8.0.43-0ubuntu0.22.04.2 for Linux on x86_64 ((Ubuntu))
+PHP 8.1.2-1ubuntu2.22 (cli) (built: Jul 15 2025 12:11:22) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2-1ubuntu2.22, Copyright (c), by Zend Technologies
+
+=== Estado de servicios ===
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Fri 2025-10-31 00:12:19 UTC; 33min ago
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 933 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+   Main PID: 980 (apache2)
+      Tasks: 7 (limit: 13161)
+     Memory: 23.3M
+        CPU: 433ms
+     CGroup: /system.slice/apache2.service
+             ├─ 980 /usr/sbin/apache2 -k start
+             ├─ 985 /usr/sbin/apache2 -k start
+             ├─ 986 /usr/sbin/apache2 -k start
+             ├─ 987 /usr/sbin/apache2 -k start
+             ├─ 988 /usr/sbin/apache2 -k start
+             ├─ 989 /usr/sbin/apache2 -k start
+             └─2798 /usr/sbin/apache2 -k start
+
+Oct 31 00:12:19 linux-practice systemd[1]: Starting The Apache HTTP Server...
+Oct 31 00:12:19 linux-practice apachectl[967]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.2.1. Set the 'ServerName' directive globally to suppress this message
+Oct 31 00:12:19 linux-practice systemd[1]: Started The Apache HTTP Server.
+
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+     Active: active (running) since Fri 2025-10-31 00:12:23 UTC; 37min ago
+    Process: 851 ExecStartPre=/usr/share/mysql/mysql-systemd-start pre (code=exited, status=0/SUCCESS)
+   Main PID: 984 (mysqld)
+     Status: "Server is operational"
+      Tasks: 38 (limit: 13161)
+     Memory: 423.8M
+        CPU: 36.670s
+     CGroup: /system.slice/mysql.service
+             └─984 /usr/sbin/mysqld
+
+Oct 31 00:12:18 linux-practice systemd[1]: Starting MySQL Community Server...
+Oct 31 00:12:23 linux-practice systemd[1]: Started MySQL Community Server.
+
+=== Puertos en escucha ===
+tcp        0      0 127.0.0.1:33060         0.0.0.0:*               LISTEN      984/mysqld          
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      984/mysqld          
+tcp6       0      0 :::80                   :::*                    LISTEN      980/apache2         
+
+=== Archivos web creados ===
+total 24
+drwxr-xr-x 2 root root 4096 Oct 31 00:26 .
+drwxr-xr-x 3 root root 4096 Oct 30 22:59 ..
+-rw-r--r-- 1 root root 4662 Oct 31 00:26 index.html
+-rw-r--r-- 1 root root   20 Oct 30 22:46 info.php
+-rw-r--r-- 1 root root  238 Oct 30 23:44 testdb.php
+
