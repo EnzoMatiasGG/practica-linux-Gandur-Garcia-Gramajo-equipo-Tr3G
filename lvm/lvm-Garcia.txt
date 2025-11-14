@@ -1,0 +1,64 @@
+========== VERIFICACIÓN DE LVM - Garcia ==========
+
+=== ESPACIO EN DISCO SIN LVM MONTADO ===
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.1G  1.3M  1.1G   1% /run
+/dev/sda1        39G  7.0G   32G  19% /
+tmpfs           5.4G     0  5.4G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+vagrant         894G  600G  295G  68% /vagrant
+tmpfs           1.1G   96K  1.1G   1% /run/user/132
+tmpfs           1.1G   92K  1.1G   1% /run/user/1000
+NAME                                MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0                                 7:0    0     4K  1 loop /snap/bare/5
+loop1                                 7:1    0  63.8M  1 loop /snap/core20/2599
+loop2                                 7:2    0  63.8M  1 loop /snap/core20/2669
+loop3                                 7:3    0  73.9M  1 loop /snap/core22/2139
+loop4                                 7:4    0 249.1M  1 loop /snap/firefox/7177
+loop5                                 7:5    0 516.2M  1 loop /snap/gnome-42-2204/226
+loop6                                 7:6    0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop7                                 7:7    0  89.4M  1 loop /snap/lxd/31333
+loop8                                 7:8    0  91.4M  1 loop /snap/lxd/35819
+loop9                                 7:9    0  49.3M  1 loop /snap/snapd/24792
+loop10                                7:10   0  50.9M  1 loop /snap/snapd/25577
+loop11                                7:11   0 250.1M  1 loop /snap/firefox/7298
+sda                                   8:0    0    40G  0 disk 
+└─sda1                                8:1    0    40G  0 part /
+sdb                                   8:16   0    10M  0 disk 
+sdc                                   8:32   0     2G  0 disk 
+└─vg_datos_Garcia-lv_storage_Garcia 253:0    0   1.5G  0 lvm  
+=== ESPACIO EN DISCO CON LVM MONTADO ===
+Filesystem                                     Size  Used Avail Use% Mounted on
+tmpfs                                          1.1G  1.3M  1.1G   1% /run
+/dev/sda1                                       39G  7.0G   32G  19% /
+tmpfs                                          5.4G     0  5.4G   0% /dev/shm
+tmpfs                                          5.0M     0  5.0M   0% /run/lock
+vagrant                                        894G  600G  295G  68% /vagrant
+tmpfs                                          1.1G   96K  1.1G   1% /run/user/132
+tmpfs                                          1.1G   92K  1.1G   1% /run/user/1000
+/dev/mapper/vg_datos_Garcia-lv_storage_Garcia  1.5G   24K  1.4G   1% /mnt/lvm_storage_Garcia
+NAME                                MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0                                 7:0    0     4K  1 loop /snap/bare/5
+loop1                                 7:1    0  63.8M  1 loop /snap/core20/2599
+loop2                                 7:2    0  63.8M  1 loop /snap/core20/2669
+loop3                                 7:3    0  73.9M  1 loop /snap/core22/2139
+loop4                                 7:4    0 249.1M  1 loop /snap/firefox/7177
+loop5                                 7:5    0 516.2M  1 loop /snap/gnome-42-2204/226
+loop6                                 7:6    0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop7                                 7:7    0  89.4M  1 loop /snap/lxd/31333
+loop8                                 7:8    0  91.4M  1 loop /snap/lxd/35819
+loop9                                 7:9    0  49.3M  1 loop /snap/snapd/24792
+loop10                                7:10   0  50.9M  1 loop /snap/snapd/25577
+loop11                                7:11   0 250.1M  1 loop /snap/firefox/7298
+sda                                   8:0    0    40G  0 disk 
+└─sda1                                8:1    0    40G  0 part /
+sdb                                   8:16   0    10M  0 disk 
+sdc                                   8:32   0     2G  0 disk 
+└─vg_datos_Garcia-lv_storage_Garcia 253:0    0   1.5G  0 lvm  /mnt/lvm_storage_Garcia
+=== ESCANEO DE LOGICAL VOLUMES ===
+  ACTIVE            '/dev/vg_datos_Garcia/lv_storage_Garcia' [1.50 GiB] inherit
+=== ESCANEO DE PHYSICAL VOLUMES ===
+  PV /dev/sdc   VG vg_datos_Garcia   lvm2 [<2.00 GiB / 508.00 MiB free]
+  Total: 1 [<2.00 GiB] / in use: 1 [<2.00 GiB] / in no VG: 0 [0   ]
+=== ESCANEO DE VOLUME GROUPS ===
+  Found volume group "vg_datos_Garcia" using metadata type lvm2
