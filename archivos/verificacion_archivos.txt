@@ -1,0 +1,27 @@
+VERIFICACIÓN DE ARCHIVOS - Garcia
+Estructura de directorios creada
+/mnt/lvm_storage_Garcia
+/mnt/lvm_storage_Garcia/temporal
+/mnt/lvm_storage_Garcia/lost+found
+/mnt/lvm_storage_Garcia/proyectos
+/mnt/lvm_storage_Garcia/proyectos/archivados
+/mnt/lvm_storage_Garcia/proyectos/activos
+/mnt/lvm_storage_Garcia/respaldos
+Archivos en cada directorio
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/temporal/documento05.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/temporal/documento03.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/temporal/documento02.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/temporal/documento04.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/temporal/documento01.txt
+-rw-r--r-- 1 root root 783 Nov 14 22:13 /mnt/lvm_storage_Garcia/verificacion_archivos.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/proyectos/archivados/documento06.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/proyectos/archivados/documento08.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/proyectos/archivados/documento07.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/proyectos/activos/documento05.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/proyectos/activos/documento03.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/proyectos/activos/documento02.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/proyectos/activos/documento04.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/proyectos/activos/documento01.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/respaldos/documento09.txt
+-rw-r--r-- 1 root root 27 Nov 14 22:01 /mnt/lvm_storage_Garcia/respaldos/documento10.txt
+-rw-r--r-- 1 root root 1808 Nov 14 22:05 /mnt/lvm_storage_Garcia/verificacionarchivos.txt
