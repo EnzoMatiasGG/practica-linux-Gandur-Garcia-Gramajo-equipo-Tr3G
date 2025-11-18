@@ -1,0 +1,22 @@
+root@linux-practice:/home/vagrant/fastfetch# fastfetch
+                             ....              root@linux-practice
+              .',:clooo:  .:looooo:.           -------------------
+           .;looooooooc  .oooooooooo'          OS: Ubuntu 22.04.5 LTS (Jammy Jellyfish) x86_64
+        .;looooool:,''.  :ooooooooooc          Host: VirtualBox (1.2)
+       ;looool;.         'oooooooooo,          Kernel: Linux 5.15.0-161-generic
+      ;clool'             .cooooooc.  ,,       Uptime: 2 hours, 13 mins
+         ...                ......  .:oo,      Packages: 688 (dpkg), 3 (snap)
+  .;clol:,.                        .loooo'     Shell: bash 5.1.16
+ :ooooooooo,                        'ooool     Display (VBOX monitor): 1024x768, 60 Hz [External]
+'ooooooooooo.                        loooo.    Terminal: /dev/pts/5
+'ooooooooool                         coooo.    CPU: AMD Ryzen 3 3200G (2) @ 3.59 GHz
+ ,loooooooc.                        .loooo.    GPU: InnoTek Systemberatung GmbH VirtualBox Graphics Adapter
+   .,;;;'.                          ;ooooc     Memory: 389.49 MiB / 1.92 GiB (20%)
+       ...                         ,ooool.     Swap: Disabled
+    .cooooc.              ..',,'.  .cooo.      Disk (/): 2.26 GiB / 38.70 GiB (6%) - ext4
+      ;ooooo:.           ;oooooooc.  :l.       Local IP (enp0s3): 10.0.2.15/24
+       .coooooc,..      coooooooooo.           Locale: C.UTF-8
+         .:ooooooolc:. .ooooooooooo'
+           .':loooooo;  ,oooooooooc            ████████████████████████
+               ..';::c'  .;loooo:'             ████████████████████████
+>>
