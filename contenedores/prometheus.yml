@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+
+  # Scrape de Prometheus (a sí mismo)
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['prometheus-practica:9090']
+
+  # Scrape de Nginx — FALLARÁ (error intencional del ejercicio)
+  - job_name: 'nginx'
+    static_configs:
+      - targets: ['nginx:9113']

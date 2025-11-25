@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  # Servicio 1: Nginx - Servidor web
+  nginx:
+    container_name: nginx-practica
+    image: nginx:alpine
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+  # Servicio 2: Redis - Base de datos en memoria
+  redis:
+    container_name: redis-practica
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    networks:
+      - monitoring   # <-- Arreglado (antes: monitoring-network)
+
+  # Servicio 3: Postgres
+  postgres:
+    container_name: postgres-practica
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER: alumno
+      POSTGRES_PASSWORD: practica123
+      POSTGRES_DB: tp_final
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+  # Prometheus
+  prometheus:
+    container_name: prometheus-practica
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    restart: unless-stopped
+    networks:
+      - monitoring
+    depends_on:
+      - nginx
+      - redis
+
+  # Loki
+  loki:
+    container_name: loki-practica
+    image: grafana/loki:latest
+    ports:
+      - "3100:3100"
+    command: "-config.file=/etc/loki/local-config.yaml"
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+  # Grafana
+  grafana:
+    container_name: grafana-practica
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=practica123
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana-data:/var/lib/grafana
+    restart: unless-stopped
+    depends_on:
+      - prometheus
+      - loki
+    networks:
+      - monitoring
+
+networks:
+  monitoring:
+    driver: bridge
+
+volumes:
+  grafana-data:
+
