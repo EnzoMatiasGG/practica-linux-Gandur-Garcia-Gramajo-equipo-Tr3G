@@ -5,3 +5,7 @@ inet 192.168.1.35/24 brd 192.168.1.255 scope global dynamic enp0s8
 IP DE LA VM - Gramajo
 inet 192.168.100.82/24 metric 100 brd 192.168.100.255 scope global dynamic enp0s8
 valid_lft 85772sec preferred_lft 85772sec
+
+IP DE LA VM - Gandur
+inet 10.0.2.15/24 metric 100 brd 10.0.2.255 scope global dynamic enp0s3
+valid_lft 84080sec preferred_lft 84080sec
