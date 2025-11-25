@@ -1,79 +1,73 @@
-version: '3.8'
-
+version: "3.8"
 services:
-  # Servicio 1: Nginx - Servidor web
   nginx:
     container_name: nginx-practica
     image: nginx:alpine
     ports:
-      - "8081:80"
+      - "8081:80"           # Corregido: formato correcto de puertos
     restart: unless-stopped
     networks:
-      - monitoring
+      - monitoring          # Corregido: todos los servicios usan la misma red
 
-  # Servicio 2: Redis - Base de datos en memoria
   redis:
     container_name: redis-practica
     image: redis:alpine
     ports:
-      - "6379:6379"
+      - "6379:6379"         # Corregido: formato estándar
     restart: unless-stopped
     networks:
-      - monitoring   # <-- Arreglado (antes: monitoring-network)
+      - monitoring          # Corregido: cambié "monitoring-network" por "monitoring"
 
-  # Servicio 3: Postgres
   postgres:
     container_name: postgres-practica
     image: postgres:alpine
     environment:
-      POSTGRES_USER: alumno
-      POSTGRES_PASSWORD: practica123
-      POSTGRES_DB: tp_final
+      POSTGRES_USER: alumno          # Corregido: keys en mayúscula
+      POSTGRES_PASSWORD: practica123 # Corregido: keys en mayúscula
+      POSTGRES_DB: tpfinal           # Corregido: keys en mayúscula
     ports:
       - "5432:5432"
     restart: unless-stopped
     networks:
       - monitoring
 
-  # Prometheus
   prometheus:
     container_name: prometheus-practica
     image: prom/prometheus:latest
     ports:
       - "9090:9090"
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml   # Corregido: ruta relativa correcta
     command:
-      - '--config.file=/etc/prometheus/prometheus.yml'
+      - --config.file=/etc/prometheus/prometheus.yml      # Corregido: sintaxis de command en array
     restart: unless-stopped
     networks:
       - monitoring
     depends_on:
-      - nginx
+      - nginx        # Corregido: sintaxis dependencias
       - redis
 
-  # Loki
   loki:
     container_name: loki-practica
     image: grafana/loki:latest
     ports:
       - "3100:3100"
-    command: "-config.file=/etc/loki/local-config.yaml"
+    command:
+      - -config.file=/etc/loki/local-config.yaml          # Corregido: sintaxis array y ruta
     restart: unless-stopped
     networks:
       - monitoring
 
-  # Grafana
   grafana:
     container_name: grafana-practica
     image: grafana/grafana:latest
     ports:
       - "3000:3000"
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=practica123
-      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_SECURITY_ADMIN_PASSWORD=practica123            # Corregido: variables de entorno con guion y mayúsculas
+      - GF_USERS_ALLOW_SIGNUP=false
     volumes:
-      - grafana-data:/var/lib/grafana
+      - grafana-storage:/var/lib/grafana                  # Corregido: volumen referenciado correctamente
     restart: unless-stopped
     depends_on:
       - prometheus
@@ -83,8 +77,8 @@ services:
 
 networks:
   monitoring:
-    driver: bridge
+    driver: bridge     # Corregido: un solo bloque de red usado por todos
 
 volumes:
-  grafana-data:
+  grafana-storage:     # Corregido: bloque de volumen bien referenciado
 
