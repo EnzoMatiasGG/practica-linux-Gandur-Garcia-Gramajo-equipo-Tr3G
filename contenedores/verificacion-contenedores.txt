@@ -1,0 +1,79 @@
+echo "=== IP DE LA VM ===" >>
+root@linux-practice:/home/vagrant/gramajo_espacio/practica-linux-Gandur-Garcia-Gramajo-equipo-Tr3G/co
+ntenedores# hostname -I
+10.0.2.15 192.168.100.82 172.17.0.1 172.18.0.1 2803:9800:9034:4652:a00:27ff:fe8c:5378
+
+echo "=== CONTENEDORES EN EJECUCIÓN ===" >>
+root@linux-practice:/home/vagrant/gramajo_espacio/practica-linux-Gandur-Garcia-Gramajo-equipo-Tr3G/co
+ntenedores# docker ps
+CONTAINER ID   IMAGE                    COMMAND                  CREATED             STATUS
+   PORTS                                         NAMES
+631fefa1ac6e   grafana/grafana:latest   "/run.sh"                59 minutes ago      Up 59 minutes
+   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   grafana-practica
+38a2cff642c2   prom/prometheus:latest   "/bin/prometheus --c…"   59 minutes ago      Up 59 minutes
+   0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp   prometheus-practica
+fd807bf7a5a7   nginx:alpine             "/docker-entrypoint.…"   About an hour ago   Up About an hour
+   0.0.0.0:8081->80/tcp, [::]:8081->80/tcp       nginx-practica
+869e13a86164   redis:alpine             "docker-entrypoint.s…"   About an hour ago   Up About an hour
+   0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis-practica
+6ce52327fef1   postgres:alpine          "docker-entrypoint.s…"   About an hour ago   Up About an hour
+   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp   postgres-practica
+2c3681174753   grafana/loki:latest      "/usr/bin/loki -conf…"   About an hour ago   Up About an hour
+   0.0.0.0:3100->3100/tcp, [::]:3100->3100/tcp   loki-practica
+
+echo "=== ESTADO DE DOCKER-COMPOSE ===" >>
+root@linux-practice:/home/vagrant/gramajo_espacio/practica-linux-Gandur-Garcia-Gramajo-equipo-Tr3G/co
+ntenedores# docker-compose ps
+       Name                      Command               State                   Ports
+-----------------------------------------------------------------------------------------------------
+grafana-practica      /run.sh                          Up      0.0.0.0:3000->3000/tcp,:::3000-
+                                                               >3000/tcp
+loki-practica         /usr/bin/loki -config.file ...   Up      0.0.0.0:3100->3100/tcp,:::3100-
+                                                               >3100/tcp
+nginx-practica        /docker-entrypoint.sh ngin ...   Up      0.0.0.0:8081->80/tcp,:::8081->80/tcp
+postgres-practica     docker-entrypoint.sh postgres    Up      0.0.0.0:5432->5432/tcp,:::5432-
+                                                               >5432/tcp
+prometheus-practica   /bin/prometheus --config.f ...   Up      0.0.0.0:9090->9090/tcp,:::9090-
+                                                               >9090/tcp
+redis-practica        docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp,:::6379-
+                                                               >6379/tcp
+root@linux-practice:/home/vagrant/gramajo_espacio/practica-linux-Gandur-Garcia-Gramajo-equipo-Tr3G/co
+ntenedores#
+
+
+root@linux-practice:/home/vagrant/gramajo_espacio/practica-linux-Gandur-Garcia-Gramajo-equipo-Tr3G/co
+ntenedores# docker-compose ps
+       Name                      Command               State                   Ports
+-----------------------------------------------------------------------------------------------------
+grafana-practica      /run.sh                          Up      0.0.0.0:3000->3000/tcp,:::3000-
+                                                               >3000/tcp
+loki-practica         /usr/bin/loki -config.file ...   Up      0.0.0.0:3100->3100/tcp,:::3100-
+                                                               >3100/tcp
+nginx-practica        /docker-entrypoint.sh ngin ...   Up      0.0.0.0:8081->80/tcp,:::8081->80/tcp
+postgres-practica     docker-entrypoint.sh postgres    Up      0.0.0.0:5432->5432/tcp,:::5432-
+                                                               >5432/tcp
+prometheus-practica   /bin/prometheus --config.f ...   Up      0.0.0.0:9090->9090/tcp,:::9090-
+                                                               >9090/tcp
+redis-practica        docker-entrypoint.sh redis ...   Up      0.0.0.0:6379->6379/tcp,:::6379-
+                                                               >6379/tcp
+root@linux-practice:/home/vagrant/gramajo_espacio/practica-linux-Gandur-Garcia-Gramajo-equipo-Tr3G/co
+ntenedores# nano verificacion-contenedores.txt
+
+echo "=== REDES DE DOCKER ===" >>
+root@linux-practice:/home/vagrant/gramajo_espacio/practica-linux-Gandur-Garcia-Gramajo-equipo-Tr3G/co
+ntenedores# docker network ls
+NETWORK ID     NAME                      DRIVER    SCOPE
+5af158b45cc5   bridge                    bridge    local
+3507cf9beb0d   contenedores_monitoring   bridge    local
+3a653a0d9ea9   host                      host      local
+b2a94ea286c6   none                      null      local
+
+echo "=== VOLÚMENES DE DOCKER ===" >>
+root@linux-practice:/home/vagrant/gramajo_espacio/practica-linux-Gandur-Garcia-G
+ramajo-equipo-Tr3G/contenedores# docker volume ls
+DRIVER    VOLUME NAME
+local     1b8a8b0f02f4cc087c613759be4fda8f496e27bca5d31e75df178f73146c4ff4
+local     7b0ed633adf8269ea238d66c38ea2fb496cfcbc31c34bcf8c97cb926dc4474a1
+local     a0311515d2812fa545a05a3c24a67d5abfb95163638b8f047e9bb2115b1824a4
+local     contenedores_grafana-data
+
