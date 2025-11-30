@@ -50,6 +50,28 @@ VirtualBox Graphics Adapterooooooc.  :l.
                                                Local IP (enp0s3): 10.0.2.15/24
                                                Locale: C.UTF-8
 
-
+echo "========== FASTFETCH DE GANDUR ==========" >>
+vagrant@linux-practice:~/gandur_espacio/practica-linux-Gandur-Garcia-Gramajo-eq
+uipo-Tr3G/informacion$ fastfetch
+ >>                          ....              vagrant@linux-practice
+              .',:clooo:  .:looooo:.           ----------------------
+           .;looooooooc  .oooooooooo'          OS: Ubuntu 22.04.5 LTS (Jammy Jellyfish) x86_64
+        .;looooool:,''.  :ooooooooooc          Host: VirtualBox (1.2)
+       ;looool;.         'oooooooooo,          Kernel: Linux 5.15.0-161-generic
+      ;clool'             .cooooooc.  ,,       Uptime: 15 hours, 28 mins
+         ...                ......  .:oo,      Packages: 591 (dpkg), 3 (snap)
+  .;clol:,.                        .loooo'     Shell: bash 5.1.16
+ :ooooooooo,                        'ooool     Terminal:
+'ooooooooooo.                        loooo.    CPU: AMD Ryzen 7 9700X (2) @ 3.79 GHz
+'ooooooooool                         coooo.    GPU: InnoTek Systemberatung GmbH VirtualBox Graphics Adapter
+ ,loooooooc.                        .loooo.    Memory: 353.17 MiB / 1.92 GiB (18%)
+   .,;;;'.                          ;ooooc     Swap: Disabled
+       ...                         ,ooool.     Disk (/): 1.86 GiB / 38.70 GiB (5%) - ext4
+    .cooooc.              ..',,'.  .cooo.      Disk (/mnt/lvm_storage_gandur): 84.00 KiB / 1.44 GiB (0%) - ext4
+      ;ooooo:.           ;oooooooc.  :l.       Local IP (enp0s3): 10.0.2.15/24
+       .coooooc,..      coooooooooo.           Locale: C.UTF-8
+         .:ooooooolc:. .ooooooooooo'
+           .':loooooo;  ,oooooooooc
+               ..';::c'  .;loooo:'
 
 
