@@ -1,0 +1,24 @@
+"========== INFORMACIÓN DE USUARIOS Y GRUPOS - Gramajo =========="
+"Usuario actual:"
+vagrant@linux-practice:/tmp/colaborativo$ cd permisos/
+vagrant@linux-practice:/tmp/colaborativo/permisos$ ls
+usuarios_gramajo.txt
+vagrant@linux-practice:/tmp/colaborativo/permisos$ whoami
+vagrant
+
+"Grupos del usuario:"
+vagrant@linux-practice:~$ groups
+vagrant equipotrabajo
+vagrant@linux-practice:~$ 
+
+"ID del usuario:"
+vagrant@linux-practice:~$ id
+uid=1000(vagrant) gid=1000(vagrant) groups=1000(vagrant),1005(equipotrabajo)
+vagrant@linux-practice:~$
+
+"Usuarios del sistema:"
+vagrant@linux-practice:~$ cat /etc/passwd | grep estudiante
+estudiante1:x:1002:1002::/home/estudiante1:/bin/sh
+estudiante2:x:1003:1003::/home/estudiante2:/bin/sh
+estudiante3:x:1004:1004::/home/estudiante3:/bin/sh
+

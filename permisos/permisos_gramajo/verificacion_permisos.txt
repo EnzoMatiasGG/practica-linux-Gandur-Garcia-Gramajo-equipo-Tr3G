@@ -1,0 +1,21 @@
+echo "========== VERIFICACIÓN DE PERMISOS - GRAMAJO ==========" >>
+vagrant@linux-practice:~$ ls -la gramajo_espacio/
+total 8
+drwxrwxr-x 2 vagrant vagrant 4096 Nov 24 00:08 .
+drwxr-x--- 6 vagrant vagrant 4096 Nov 25 01:17 ..
+-rw------- 1 vagrant vagrant    0 Nov 24 00:07 privado.txt
+-rw-r--r-- 1 vagrant vagrant    0 Nov 24 00:08 publico.txt
+vagrant@linux-practice:~$
+echo "Archivos en directorio colaborativo:" >>
+vagrant@linux-practice:/tmp/colaborativo$ ls -la /tmp/colaborativo/
+total 32
+drwxrwx---  3 root equipotrabajo  4096 Nov 25 00:58 .
+drwxrwxrwt 18 root root          20480 Nov 25 00:50 ..
+-rw-r--r--  1 root root              0 Nov 24 00:40 inf_usuarios_grupo.txt
+-rw-r--r--  1 root root            596 Nov 24 00:46 inf_usuarios_grupo.txt.save
+drwxr-xr-x  2 root root           4096 Nov 25 01:08 permisos
+vagrant@linux-practice:/tmp/colaborativo$
+echo "Información del grupo equipotrabajo:" >>
+vagrant@linux-practice:/tmp/colaborativo$ getent group equipotrabajo
+equipotrabajo:x:1005:estudiante1,estudiante2,estudiante3,vagrant
+

@@ -1,0 +1,43 @@
+echo "=== ESPACIO EN DISCO SIN LVM MONTADO ===" >>
+vagrant@linux-practice:/$ sudo umount /mnt/lvm_storage_gramajo
+umount: /mnt/lvm_storage_gramajo: not mounted.
+vagrant@linux-practice:/$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           197M  1.1M  196M   1% /run
+/dev/sda1        39G  2.3G   37G   6% /
+tmpfs           982M     0  982M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+vagrant         111G   46G   66G  41% /vagrant
+tmpfs           197M  4.0K  197M   1% /run/user/1000
+vagrant@linux-practice:/$
+
+echo "=== ESPACIO EN DISCO CON LVM MONTADO ===" >>
+vagrant@linux-practice:~$ sudo mount /dev/vg_datos_gramajo/lv_storage_gramajo
+/mnt/lvm_storage_gramajovagrant@linux-practice:~$ df -h
+Filesystem                                       Size  Used Avail Use% Mounted o
+n
+tmpfs                                            197M  1.1M  196M   1% /run
+/dev/sda1                                         39G  2.3G   37G   6% /
+tmpfs                                            982M     0  982M   0% /dev/shm
+tmpfs                                            5.0M     0  5.0M   0% /run/lock
+vagrant                                          111G   46G   66G  41% /vagrant
+tmpfs                                            197M  4.0K  197M   1% /run/user
+/1000
+/dev/mapper/vg_datos_gramajo-lv_storage_gramajo  1.5G   24K  1.4G   1% /mnt/lvm_
+storage_gramajo
+
+echo "=== ESCANEO DE LOGICAL VOLUMES ==="
+vagrant@linux-practice:~$ sudo lvscan
+  ACTIVE            '/dev/vg_datos_gramajo/lv_storage_gramajo' [1.50 GiB] inheri
+t
+
+echo "=== ESCANEO DE PHYSICAL VOLUMES ==="
+vagrant@linux-practice:~$ sudo pvscan
+  PV /dev/sdc   VG vg_datos_gramajo   lvm2 [<2.00 GiB / 508.00 MiB free]
+  Total: 1 [<2.00 GiB] / in use: 1 [<2.00 GiB] / in no VG: 0 [0   ]
+
+"=== ESCANEO DE VOLUME GROUPS ==="
+vagrant@linux-practice:~$ sudo vgscan
+  Found volume group "vg_datos_gramajo" using metadata type lvm2
+vagrant@linux-practice:~$
+

@@ -1,0 +1,20 @@
+echo "Estructura de directorios creada:" >>
+root@linux-practice:/mnt/lvm_storage_gramajo# find /mnt/lvm_storage_gramajo/ -t>
+/mnt/lvm_storage_gramajo/
+/mnt/lvm_storage_gramajo/respaldos
+/mnt/lvm_storage_gramajo/lost+found
+/mnt/lvm_storage_gramajo/temporal
+/mnt/lvm_storage_gramajo/proyectos
+/mnt/lvm_storage_gramajo/proyectos/activos
+/mnt/lvm_storage_gramajo/proyectos/archivados
+"Archivos en cada directorio:"
+root@linux-practice:/mnt/lvm_storage_gramajo# find /mnt/lvm_storage_gramajo/ -t>
+total 40
+drwxr-xr-x 6 root root  4096 Nov 26 01:02 .
+drwxr-xr-x 3 root root  4096 Nov 25 20:18 ..
+drwx------ 2 root root 16384 Nov 25 20:33 lost+found
+drwxr-xr-x 4 root root  4096 Nov 25 20:49 proyectos
+drwxr-xr-x 2 root root  4096 Nov 26 00:30 respaldos
+drwxr-xr-x 2 root root  4096 Nov 26 00:30 temporal
+-rw-r--r-- 1 root root   415 Nov 26 01:02 verificacion_archivos.txt
+
