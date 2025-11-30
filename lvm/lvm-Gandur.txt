@@ -1,0 +1,29 @@
+========== VERIFICACIÓN DE LVM - GANDUR ==========
+=== ESPACIO EN DISCO SIN LVM MONTADO ===
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           197M  992K  196M   1% /run
+/dev/sda1        39G  1.8G   37G   5% /
+tmpfs           982M     0  982M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+vagrant         931G  267G  665G  29% /vagrant
+tmpfs           197M  4.0K  197M   1% /run/user/1000
+
+=== ESPACIO EN DISCO CON LVM MONTADO ===
+Filesystem                                     Size  Used Avail Use% Mounted on
+tmpfs                                          197M  992K  196M   1% /run
+/dev/sda1                                       39G  1.8G   37G   5% /
+tmpfs                                          982M     0  982M   0% /dev/shm
+tmpfs                                          5.0M     0  5.0M   0% /run/lock
+vagrant                                        931G  267G  665G  29% /vagrant
+tmpfs                                          197M  4.0K  197M   1% /run/user/1000
+/dev/mapper/vg_datos_gandur-lv_storage_gandur  1.5G   24K  1.4G   1% /mnt/lvm_storage_gandur
+
+=== LVSCAN ===
+  ACTIVE            '/dev/vg_datos_gandur/lv_storage_gandur' [1.50 GiB] inherit
+
+=== PVSCAN ===
+  PV /dev/sdc   VG vg_datos_gandur   lvm2 [<2.00 GiB / 508.00 MiB free]
+  Total: 1 [<2.00 GiB] / in use: 1 [<2.00 GiB] / in no VG: 0 [0   ]
+
+=== VGSCAN ===
+  Found volume group "vg_datos_gandur" using metadata type lvm2
