@@ -1,0 +1,14 @@
+========== VERIFICACIÓN DE PERMISOS - GANDUR ==========
+Archivos en mi directorio personal:
+total 8
+drwxrwxr-x 2 vagrant vagrant 4096 Nov 22 03:04 .
+drwxr-x--- 9 vagrant vagrant 4096 Nov 30 17:50 ..
+-rw------- 1 vagrant vagrant    0 Nov 22 03:03 privado.txt
+-rw-r--r-- 1 vagrant vagrant    0 Nov 22 03:04 publico.txt
+Archivos en directorio colaborativo:
+total 8
+drwxrwx---  2 root equipotrabajo 4096 Dec  1 03:53 .
+drwxrwxrwt 12 root root          4096 Dec  1 03:53 ..
+Información del grupo equipotrabajo:
+equipotrabajo:x:1005:estudiante1,estudiante2,estudiante3,vagrant
+
