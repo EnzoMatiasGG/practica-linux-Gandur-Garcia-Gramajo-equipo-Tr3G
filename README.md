@@ -2,18 +2,18 @@
   <ul align="center">
     <summary><h1 style="display: inline-block"> Trabajo Practico Final📄✨
  </h1></summary>
-    <summary><h1 style="display: inline-block">Gandur-Garcia-Gramajo-equipo-Tr3G :man_technologist: </h1></summary>
+    <summary><h1 style="display: inline-block">Gandur-Garcia-Gramajo-equipo-Tr3G</h1></summary>
   </ul>
 </div>
   <ul align="center">
 
-  🐧 Arquitectura y Sistemas Operativos
+  **🐧 Arquitectura y Sistemas Operativos**
 
 UTN - FRA -    DIV 313-2
 
   ---
 
-  # 👥 Integrantes del Equipo
+  #  Integrantes del Equipo 👥
 <ul align="left">
 
   👨‍💼 [Administrador Kevin Gramajo](https://github.com/kevingramajo)
@@ -160,10 +160,14 @@ Se documento:
 
 lamp/verificacion_lamp.txt
 
-# 📘 Conclusiones
+#  Conclusiones 📘
 
- El Trabajo Practico en ciertos puntos es sencillo, al principio cuesta acostumbrarse a una interfaz diferente a la habitual, pero te terminas acostumbrando a los comandos y termina siendo lo habitual que se utiliza con el raton y el teclado diariamente en windows, al final resulta facil y agradable moverse por el repositorio con los comandos mas comunes cd / ls / touch / nano / rm /.
-  La parte
+  🛠️ El Trabajo Practico esta genial, en ciertos puntos es sencillo, al principio cuesta acostumbrarse a una interfaz diferente a la habitual, pero te terminas acostumbrando a los comandos y termina siendo lo mismo que se utiliza con el raton y el teclado diariamente en windows, al final resulta facil y agradable moverse por el repositorio con los comandos mas comunes de Linux cd / ls / touch / nano / rm /.
+  
+ 🧠 Pero tambien tiene su dificultad, cuando intentamos levantar los docker-compose, tuvimos un rato batallando para poder lograr arreglar el codigo y que todo funcione correctamente, nos fuimos guiando con los comandos proporcionados en el pdf y con ayuda de videos.
+ 
+ 🚀 Es divertido al final abrir el bash, ejecutar la VM sin ningun inconveniente y total facilidad, moverse por el repositorio con los comandos aprendidos, crear, borrar, mover archivos. Ademas de todo lo aprendido como crear una lvm, levantar un docker-compose y la creacion de una base de datos.
 
 
   
+
