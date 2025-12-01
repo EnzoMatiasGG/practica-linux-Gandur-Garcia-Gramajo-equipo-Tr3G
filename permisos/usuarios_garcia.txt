@@ -1,0 +1,10 @@
+========== INFORMACIÓN DE USUARIOS Y GRUPOS - GARCIA ==========
+Usuario actual:
+vagrant
+Grupos del usuario:
+vagrant
+ID del usuario:
+uid=1000(vagrant) gid=1000(vagrant) groups=1000(vagrant)
+Usuarios del sistema:
+estudiante1:x:1002:1002::/home/estudiante1:/bin/sh
+

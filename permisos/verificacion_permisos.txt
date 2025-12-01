@@ -12,3 +12,15 @@ drwxrwxrwt 12 root root          4096 Dec  1 03:53 ..
 Información del grupo equipotrabajo:
 equipotrabajo:x:1005:estudiante1,estudiante2,estudiante3,vagrant
 
+========== VERIFICACIÓN DE PERMISOS - GARCIA ==========
+Archivos en mi directorio personal:
+total 16
+drwxrwxr-x 2 vagrant vagrant 4096 Dec  1 04:01 .
+drwxr-x--- 7 vagrant vagrant 4096 Dec  1 04:01 ..
+-rw------- 1 vagrant vagrant    0 Dec  1 03:47 privado.txt
+-rw-r--r-- 1 vagrant vagrant    0 Dec  1 03:47 publico.txt
+-rw-rw-r-- 1 vagrant vagrant  264 Dec  1 03:49 usuarios_garcia.txt
+-rw-rw-r-- 1 vagrant vagrant  169 Dec  1 03:49 verificacion_permisos.txt
+Archivos en directorio colaborativo:
+Información del grupo equipotrabajo:
+
