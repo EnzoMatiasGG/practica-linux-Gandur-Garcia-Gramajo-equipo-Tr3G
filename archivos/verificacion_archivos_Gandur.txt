@@ -1,0 +1,28 @@
+VERIFICACIÓN DE ARCHIVOS - Gandur
+Estructura de directorios creada
+/mnt/lvm_storage_gandur
+/mnt/lvm_storage_gandur/temporal
+/mnt/lvm_storage_gandur/lost+found
+/mnt/lvm_storage_gandur/proyectos
+/mnt/lvm_storage_gandur/proyectos/archivados
+/mnt/lvm_storage_gandur/proyectos/activos
+/mnt/lvm_storage_gandur/respaldos
+
+Archivos en cada directorio
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/temporal/documento01.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/temporal/documento02.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/temporal/documento03.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/temporal/documento04.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/temporal/documento05.txt
+-rw-r--r-- 1 root root 783 Nov 24 22:10 /mnt/lvm_storage_gandur/verificacion_archivos.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/proyectos/archivados/documento06.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/proyectos/archivados/documento07.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/proyectos/archivados/documento08.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/proyectos/activos/documento01.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/proyectos/activos/documento02.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/proyectos/activos/documento03.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/proyectos/activos/documento04.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/proyectos/activos/documento05.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/respaldos/documento09.txt
+-rw-r--r-- 1 root root 27 Nov 24 22:07 /mnt/lvm_storage_gandur/respaldos/documento10.txt
+-rw-r--r-- 1 root root 1808 Nov 24 22:10 /mnt/lvm_storage_gandur/verificacionarchivos.txt

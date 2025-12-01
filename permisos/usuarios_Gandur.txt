@@ -1,0 +1,12 @@
+========== INFORMACIÓN DE USUARIOS Y GRUPOS - GANDUR ==========
+Usuario actual:
+root
+Grupos del usuario:
+root
+ID del usuario:
+uid=0(root) gid=0(root) groups=0(root)
+Usuarios del sistema:
+estudiante2:x:1002:1002::/home/estudiante2:/bin/sh
+estudiante1:x:1003:1003::/home/estudiante1:/bin/sh
+estudiante3:x:1004:1004::/home/estudiante3:/bin/sh
+
