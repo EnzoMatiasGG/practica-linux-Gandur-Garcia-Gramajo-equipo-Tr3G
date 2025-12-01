@@ -1,6 +1,6 @@
 # Errores Encontrados y Solución de Problemas
 
-Durante el despliegue de los servicios con Docker Compose, encontramos y solucionamos los siguientes errores intencionales:
+Durante el despliegue de los servicios con Docker Compose, encontramos y solucionamos los siguientes errores:
 
 ## 1. Error en la red del servicio Redis
 **Problema:**
