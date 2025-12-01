@@ -22,34 +22,26 @@ root@linux-practice:/home/vagrant/fastfetch# fastfetch
 >>
 
 echo "========== FASTFETCH DE GRAMAJO ==========" >>
-vagrant@linux-practice:~/gramajo_espacio/practica-linux-Gandur-Garcia-Gramajo-eq
-uipo-Tr3G/informacion$ fastfetch
                              ....              vagrant@linux-practice
               .',:clooo:  .:looooo:.           ----------------------
-           .;looooooooc  .oooooooooo'          OS: Ubuntu 22.04.5 LTS (Jammy Jel
-lyfish) x86_64oool:,''.  :ooooooooooc
-       ;looool;.         'oooooooooo,          Host: VirtualBox (1.2)
-      ;clool'             .cooooooc.  ,,       Kernel: Linux 5.15.0-161-generic
-         ...                ......  .:oo,      Uptime: 9 hours, 52 mins
-  .;clol:,.                        .loooo'     Packages: 703 (dpkg), 3 (snap)
- :ooooooooo,                        'ooool     Shell: bash 5.1.16
-'ooooooooooo.                        loooo.    Display (VBOX monitor): 1024x768,
- 60 Hz [External]                    coooo.
- ,loooooooc.                        .loooo.    Terminal: /dev/pts/9
-   .,;;;'.                          ;ooooc     CPU: AMD Ryzen 3 3200G (2) @ 3.59
- GHz   ...                         ,ooool.
-    .cooooc.              ..',,'.  .cooo.      GPU: InnoTek Systemberatung GmbH
-VirtualBox Graphics Adapterooooooc.  :l.
-       .coooooc,..      coooooooooo.           Memory: 696.74 MiB / 1.92 GiB (35
-%)       .:ooooooolc:. .ooooooooooo'
-           .':loooooo;  ,oooooooooc            Swap: Disabled
-               ..';::c'  .;loooo:'             Disk (/): 4.29 GiB / 38.70 GiB (1
-1%) - ext4
-                                               Disk (/mnt/lvm_storage_gramajo):
-112.00 KiB / 1.44 GiB (0%) - ext4
-                                               Local IP (enp0s3): 10.0.2.15/24
-                                               Locale: C.UTF-8
-
+           .;looooooooc  .oooooooooo'          OS: Ubuntu 22.04.5 LTS (Jammy Jellyfish) x86_64
+        .;looooool:,''.  :ooooooooooc          Host: VirtualBox (1.2)
+       ;looool;.         'oooooooooo,          Kernel: Linux 5.15.0-161-generic
+      ;clool'             .cooooooc.  ,,       Uptime: 2 mins
+         ...                ......  .:oo,      Packages: 703 (dpkg), 3 (snap)
+  .;clol:,.                        .loooo'     Shell: bash 5.1.16
+ :ooooooooo,                        'ooool     Display (VBOX monitor): 1024x768, 60 Hz [External]
+'ooooooooooo.                        loooo.    Terminal: /dev/pts/0
+'ooooooooool                         coooo.    CPU: AMD Ryzen 3 3200G (2) @ 3.59 GHz
+ ,loooooooc.                        .loooo.    GPU: InnoTek Systemberatung GmbH VirtualBox Graphics Adapter
+   .,;;;'.                          ;ooooc     Memory: 593.43 MiB / 1.92 GiB (30%)
+       ...                         ,ooool.     Swap: Disabled
+    .cooooc.              ..',,'.  .cooo.      Disk (/): 4.56 GiB / 38.70 GiB (12%) - ext4
+      ;ooooo:.           ;oooooooc.  :l.       Disk (/mnt/lvm_storage_gramajo): 112.00 KiB / 1.44 GiB (0%) - ext4
+       .coooooc,..      coooooooooo.           Local IP (enp0s3): 10.0.2.15/24
+         .:ooooooolc:. .ooooooooooo'           Locale: C.UTF-8
+           .':loooooo;  ,oooooooooc
+               ..';::c'  .;loooo:'
 
 
 
